@@ -1,4 +1,13 @@
 var origState = "default";
+function noscroll() {
+  window.scrollTo( 0, 0 );
+}
+
+// add listener to disable scroll
+window.addEventListener('scroll', noscroll);
+
+// Remove listener to disable scroll
+window.removeEventListener('scroll', noscroll);
 
 // touch event handlers
 // Set up touch events for mobile, etc
